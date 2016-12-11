@@ -1,7 +1,9 @@
+/* General area */
 * {
 	font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
 	font-weight: 500;
 }
+
 
 h1 {
 	font-family: 'Dosis', sans-serif, Helvetica, Arial;
@@ -11,11 +13,13 @@ h1 {
 	font-weight: 900;
 }
 
+
 h1:hover {
 	border-color: transparent;
 	border: none;
 	outline: none;
 }
+
 
 h2 {
 	font-size: 24px;
@@ -23,69 +27,55 @@ h2 {
 	line-height: 100px;
 }
 
+
 h3 {
 	font-size: 18px;
 	color: #4A4A4A;
 	line-height: 23px;
 }
- p {
+
+
+p {
  	font-family: "Helvetica Neue", Roboto, Helvetica, Arial, sans-serif;
  	font-size: 16px;
  	color: #7B7573;
  	line-height: 24px;
  	font-weight: 400;
- }
+}
 
- strong {
+
+strong {
  	font-size: 16px;
  	color: #7B7573;
  	line-height: 24px;
- }
+}
 
- a {
+
+a {
  	font-size: 14px;
  	color: #0093B9;
  	line-height: 17px;
- }
+}
+
+
+/* Top menu area */
 .padding-top {
 	padding-top: 40px;
 	padding-right: 20px;
 }
-.padding-bottom {
-	padding-bottom: 30px;
-}
-.margin-right {
-	margin-right: 30px;
-}
-.padding-none {
-	padding: 0;
-}
-.main-link:hover {
-	text-decoration: none;
-}
+
+
 .btn {
 	padding: 20px;
 	border-width: 2px;
 	opacity: 0.8;
 }
+
+
 .btn:hover {
 	border-color: #ffdb4d;
 }
-.btn.new-item {
-	border-color: #666666;
-	color: #666666;
-}
-.btn.new-item:hover {
-	border-color: #aaaaaa;
-}
-.btn.delete {
-	border-color: #aaaaaa;
-	color: #aaaaaa;
-}
-.btn.delete:hover {
-	border-color: #aaaaaa;
-	color: red;
-}
+
 
 .category {
 	padding: 10px 20px;
@@ -96,28 +86,29 @@ h3 {
 	opacity: 0.8;
 }
 
+
 .category a {
 	text-decoration: none;
 }
 
-.cat-btn {
-	height: 375px;
-	width: 250px;
-	background: transparent;
-	border: none;
-	outline: none;
-}
+
 .glyphicon {
 	margin-right: 10px;
 }
+
+
 .top-menu {
 	padding-top: 25px;
 	padding-bottom: 15px;
 }
+
+
 .top-menu p {
 	margin-bottom: 0;
 	line-height: 16px;
 }
+
+
 .top-menu a {
 	margin-bottom: 0;
 	line-height: 16px;
@@ -125,80 +116,71 @@ h3 {
 	color: #7B7573;
 	font-weight: 400;
 }
+
+
 .divider {
 	height: 15px;
 }
+
+
 .divider.yellow {
 	background-color: #ffdb4d;
 }
+
+
 .divider.green {
 	background-color: #9FB80A;
 }
+
+
 .banner.main {
-	height: 350px;
 	background: url("/static/guitar_1280.jpg");
 	background-position: right;
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+
 .banner.menu {
 	height: 150px;
 	background-color: #E1E17F;
 	background: url("/static/guitar_1280.jpg");
 }
+
+
 .banner.profile {
 	height: 150px;
 	background-color: #A6E8EB;
 }
+
+
 .banner h1 {
 	margin: 45px 0;
 }
-.cat-img {
-	max-height: 150%;
-	max-width: 150%;
-	background-size: 100%;
-}
+
+
+/* Items area */
 .guitar-list {
  	background-color: #F0F0F0;
  	padding: 20px;
 }
+
+
 .guitar-list:hover {
  	background-color: #ffdb4d;
  	padding: 20px;
 }
-.menu-item {
-	background: #F0F0F0;
-	padding: 20px;
-	margin: 20px;
-	margin-left: -20px;
-}
-.menu-price {
-	font-weight: 700;
-}
-.creator {
-	padding-right: 20px;
-	margin-top: -20px;
-	text-align: right;
-	float:right;
-}
-.creator img {
-	width: 100px;
-	border-radius: 50%;
-}
-.creator figcaption {
-	font-size: 14px;
-	color: #7B7573;
-	font-weight: 400;
-	margin-top: -20px;
-}
+
+
 .flash {
 	background-color: #F0F0F0;
 	width:100%;
 	text-decoration: none;
 
 }
+
+
 .flash li {
 	list-style-type: none;
 	text-align: center;
-
 }
