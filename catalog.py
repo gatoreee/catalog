@@ -1,6 +1,6 @@
 """Comment."""
 from flask import Flask, render_template, request, redirect, jsonify, url_for, flash
-from sqlalchemy import create_engine, asc
+from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
 from database_setup import Base, Category, Item, User
 
@@ -409,18 +409,22 @@ def get_user_id(email):
         return None
 
 
+@app.route('/catalog/json/')
 @app.route('/catalog/JSON/')
 def catalog_json():
     """Get JSON version of catalog."""
     items = session.query(Item).all()
+    print(items)
     return jsonify(items=[i.serialize for i in items])
 
 
+@app.route('/catalog/<category_name>/json/')
 @app.route('/catalog/<category_name>/JSON/')
 def category_json(category_name):
     """Get JSON version of a category."""
     category = session.query(Category).filter_by(name=category_name).one()
     items = session.query(Item).filter_by(category_id=category.id).all()
+    print(items)
     return jsonify(items=[i.serialize for i in items])
 
 
