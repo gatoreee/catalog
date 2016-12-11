@@ -19,4 +19,4 @@ The project repository can be found at https://github.com/gatoreee/catalog. Save
 
 Extra Credit Description
 ------------------------
-I added support for retrieving and displaying the users profile picture from fb or google+. I also introduced Bootstrap for a more responsive application.
+I added support for retrieving and displaying the user's profile picture from fb or google+. I also introduced Bootstrap for a more responsive application.
