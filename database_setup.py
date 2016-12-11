@@ -1,4 +1,4 @@
-"""Comment."""
+"""Setup DB schema."""
 from sqlalchemy import Column, ForeignKey, Integer, String
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import relationship
@@ -8,7 +8,7 @@ Base = declarative_base()
 
 
 class User(Base):
-    """Comment."""
+    """User contains information about application users."""
 
     __tablename__ = 'user'
 
@@ -19,7 +19,7 @@ class User(Base):
 
 
 class Category(Base):
-    """Comment."""
+    """Category just contains the category name."""
 
     __tablename__ = 'category'
     id = Column(Integer, primary_key=True)
@@ -34,7 +34,7 @@ class Category(Base):
 
 
 class Item(Base):
-    """Comment."""
+    """Item tracks name, description, price, category and who created it."""
 
     __tablename__ = 'item'
     name = Column(String(80), nullable=False)
