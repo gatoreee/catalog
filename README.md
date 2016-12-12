@@ -15,7 +15,7 @@ The project repository can be found at https://github.com/gatoreee/catalog. Save
 4) Add your app_id and app_secret to the fb_client_secrets.json file in order to support fb login 
 5) Add your client_id and client_secret to the client_secrets.json file in order to support google+ login 
 6) From the vagrant command line, run the 'python catalog.py' command
-7) Open browser and go to http://localhost:8000/; to view json endpoints go to http://localhost:8000/catalog/json or http://localhost:8000/<category>/json (categories are: Electrics, Acoustics, Basses, Classicals, Amplifiers, Effects)
+7) Open browser and go to http://localhost:8000/; to view json endpoints go to http://localhost:8000/catalog/json or http://localhost:8000/category/json (categories are: Electrics, Acoustics, Basses, Classicals, Amplifiers, Effects) or http://localhost:8000/category/item/json
 
 Extra Credit Description
 ------------------------
