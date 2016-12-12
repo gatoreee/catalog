@@ -125,7 +125,7 @@ def edit_item(item_name):
         session.commit()
         flash('Item Successfully Edited')
         return redirect(url_for('show_item', category_name=category.name,
-                        item_name=item_name))
+                        item_name=item_to_edit.name))
     else:
         return render_template('edititem.html', category_name=category.name,
                                item_name=item_name, item=item_to_edit)
@@ -414,7 +414,6 @@ def get_user_id(email):
 def catalog_json():
     """Get JSON version of catalog."""
     items = session.query(Item).all()
-    print(items)
     return jsonify(items=[i.serialize for i in items])
 
 
@@ -424,8 +423,15 @@ def category_json(category_name):
     """Get JSON version of a category."""
     category = session.query(Category).filter_by(name=category_name).one()
     items = session.query(Item).filter_by(category_id=category.id).all()
-    print(items)
     return jsonify(items=[i.serialize for i in items])
+
+
+@app.route('/catalog/<category_name>/<item_name>/json/')
+@app.route('/catalog/<category_name>/<item_name>/JSON')
+def item_json(category_name, item_name):
+    """Get JSON version of an item."""
+    item = session.query(Item).filter_by(name=item_name).one()
+    return jsonify(item=[item.serialize])
 
 
 if __name__ == '__main__':
